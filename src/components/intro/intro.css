@@ -1,0 +1,67 @@
+/* .edina_tm_hero .image:before{
+	content: "";
+	position: absolute;
+	top: -10px;
+	bottom: -10px;
+	left: -10px;
+	right: -10px;
+	background-color: #e2e2e2;
+	border-radius: 100%;
+} */
+
+.social ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.social ul li{
+	margin: 0px;
+	display: inline-block;
+}
+.social ul li a{
+	text-decoration: none;
+	color: #e7e7e7;
+	display: inline-block;
+	position: relative;
+	line-height: 1;
+	padding: 0px 20px;
+}
+.social ul li a:after{
+	position: absolute;
+	content: "";
+	width: 1px;
+	height: 100%;
+	background-color: #E5E5E5;
+	top: 0px;
+	right: 0px;
+}
+.social ul li:last-child a:after{
+	display: none;
+}
+.social ul li .svg{
+	width: 19px;
+	height: 19px;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+} 
+.scroll-down{
+	position: absolute;
+	bottom: 50px;
+	right: 37%;
+	text-decoration: none;
+  }
+  .scroll-down img{
+	animation: move-down ease 1.5s infinite;
+  }
+  @keyframes move-down{
+	0%{
+	  transform: translateY(0);
+	}
+	30%{
+	  transform: translateY(10px);
+	}
+  }
+  

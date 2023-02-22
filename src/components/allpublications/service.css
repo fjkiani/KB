@@ -1,0 +1,23 @@
+
+.edina_tm_title{
+	width: 100%;
+	/* height: auto; */
+	clear: both;
+	float: left;
+}
+.edina_tm_title h3{
+	font-size: 60px;
+	font-weight: 800;
+	margin-bottom: 20px;
+}
+@media  screen and (max-width: 640px) {
+	.edina_tm_title h3{
+		font-size: 40px;
+		font-weight: 800;
+		margin-bottom: 20px;
+	}
+}
+.edina_tm_title p{
+	max-width: 950px;
+	text-align: justify;
+}
