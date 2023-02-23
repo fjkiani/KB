@@ -4,8 +4,15 @@ import { gsap } from "gsap";
 import { useEffect } from "react";
 import { useRef } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const About = () => {
+  useEffect(() => {
+    AOS.init({
+    duration : 20000})
+}, [])
+
   let title,
     about_content,
     about_image = useRef();
@@ -62,6 +69,7 @@ const About = () => {
   }, []);
 
   return (
+    <div class = "content" data-aos="fade-up">
     <div
       className="edina_tm_about pb-[50px] md:pb-[100px] md:pt-[100px] pt-10"
       id="about"
@@ -201,6 +209,7 @@ const About = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

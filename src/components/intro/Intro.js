@@ -55,11 +55,11 @@ const Intro = () => {
       className="bg-[#F9F9FC] h-screen w-full flex justify-center"
     >
       <div ref={(elem) => (section1_picture = elem)} className="h-full w-full ">
-        {/* <img
+        <img
           className="h-[65%] w-full object-cover object-center"
           src="/hero image.jpeg"
           alt=""
-        /> */}
+        />
 
         <div
           ref={(elem) => (section1_content = elem)}

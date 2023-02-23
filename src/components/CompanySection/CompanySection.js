@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from 'react'
 import { Container, Row, Col} from 'reactstrap';
 import Company1 from '../../assests/company-1.png'
 import Company2 from '../../assests/company-2.png'
@@ -18,12 +18,20 @@ import Company16 from '../../assests/company-16.png'
 import Company17 from '../../assests/company-17.png'
 import Company18 from '../../assests/company-18.png'
 import Company19 from '../../assests/company-19.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import './CompanySection.css';
 
 const CompanySection = () => {
+    useEffect(() => {
+        AOS.init({
+        duration : 2000})
+    }, [])
     return (
           <section>
             <Container>
+            <div class = "content" data-aos="fade-up">
                 <Row>
                     <Col className="sponsor-thumb" lg='2' md='3' sm='4' xs='4'>
                     <a href={'https://www.pbs.org/newshour/show/are-politics-of-fear-driving-anti-muslim-sentiment'} target="_blank"rel="noreferrer"><img src={Company1} alt="" /></a>
@@ -103,9 +111,10 @@ const CompanySection = () => {
                     <Col className="sponsor-thumb" lg='2' md='3' sm='4' xs='4'>
                     <a href={'https://law.wayne.edu/profile/au0111/'} target="_blank"rel="noreferrer"><img src={Company19} alt="" /></a>
                     </Col>
-          
+
 
                 </Row>
+                </div>
             </Container>
           </section>
     )
