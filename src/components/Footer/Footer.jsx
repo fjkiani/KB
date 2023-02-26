@@ -29,6 +29,15 @@ const Footer = () => {
                 />
               </a>
             </li>
+            <li>
+              {/* eslint-disable-next-line */}
+              <a
+                href="https://www.linkedin.com/in/khaled-a-beydoun-2b9b45113/"
+                target={"_blank"}
+              >
+                <img className="svg custom" src="/svg/social/in.svg" alt="" />
+              </a>
+            </li>
           </ul>
         </div>
         <span className="text-sm md:mt-0 text-center">

@@ -56,14 +56,18 @@ const Intro = () => {
     >
       <div ref={(elem) => (section1_picture = elem)} className="h-full w-full ">
         <img
-          className="h-[65%] w-full object-cover object-center"
-          src="/hero image.jpeg"
+          className="h-[65%] w-full object-cover object-center hidden md:block"
+          src="/image.png"
           alt=""
         />
-
+        <img
+          className="h-[72%] w-full object-cover object-top md:hidden"
+          src="/image-2.png"
+          alt=""
+        />
         <div
           ref={(elem) => (section1_content = elem)}
-          className="mt-5 md:mt-5 intro px-5 text-center"
+          className="mt-2 md:mt-5 intro px-5 text-center"
         >
           <h3 className="name text-[35px] md:text-[60px] font-[700] mb-[14px]">
             KHALED A. BEYDOUN
@@ -88,6 +92,15 @@ const Intro = () => {
                     src="/svg/social/64x64.png"
                     alt=""
                   />
+                </a>
+              </li>
+              <li>
+                {/* eslint-disable-next-line */}
+                <a
+                  href="https://www.linkedin.com/in/khaled-a-beydoun-2b9b45113/"
+                  target={"_blank"}
+                >
+                  <img className="svg custom" src="/svg/social/in.svg" alt="" />
                 </a>
               </li>
             </ul>

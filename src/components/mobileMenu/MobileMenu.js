@@ -5,7 +5,8 @@ const MobileMenu = () => {
   return (
     <div className="md:hidden bg-white h-[70px] flex justify-between items-center px-7 w-screen fixed z-[1000]">
       <div className="logo flex-2">
-        <h3>KHALED A.</h3>
+        {/* <h3>KHALED A.</h3> */}
+        <img className="w-[80%] object-cover" src="/logo (1).png" alt="" />
       </div>
       <div className="flex-1">
         <div

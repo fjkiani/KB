@@ -25,9 +25,9 @@ const Home = () => {
             <div className="px-10">
               <About />
             </div>
-            <CompanySection/>
+            <CompanySection />
             {/* <Service /> */}
-            <br/>
+            <br />
             <Books />
             <Blog />
             <Contact />

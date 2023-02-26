@@ -4,6 +4,7 @@ import Home from "./Home";
 import AllPublications from "./AllPublications";
 import MobileMenu from "./components/mobileMenu/MobileMenu";
 import AllNews from "./AllNews";
+import AboutMe from "./AboutMe";
 
 function App() {
   const router = createBrowserRouter([
@@ -18,6 +19,10 @@ function App() {
     {
       path: "/allnews",
       element: <AllNews />,
+    },
+    {
+      path: "/about",
+      element: <AboutMe />,
     },
   ]);
   return (
